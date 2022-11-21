@@ -1107,6 +1107,8 @@ fn default_cfg(target: &str) -> Vec<(String, Option<String>)> {
         ("netbsd", "unix", "")
     } else if target.contains("openbsd") {
         ("openbsd", "unix", "")
+    } else if target.contains("cygwin") {
+        ("cygwin", "unix", "")
     } else if target.contains("dragonfly") {
         ("dragonfly", "unix", "")
     } else if target.contains("solaris") {
